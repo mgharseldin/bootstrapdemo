@@ -5,57 +5,218 @@
   <title>Melissa's First Bootstrap Tutorial</title>
 <link rel= "stylesheet" href="css/bootstrap.css">
 
+<style>
+.jumbotron{
+    background-color: #2E2D88;
+;
+    color: white;
+}
+.tab-content {
+    border-left: 1 px solid #ddd;
+    border-right: 1 px solid #ddd;
+    border-bottom: 1 px solid #ddd;
+    padding: 10px;
+}
+
+.nav-tabs {
+  margin-bottom: 0;
+}
+
+</style>
+
 </head>
 <body>
+<div>
+
+
+<!-- This part of the tutorial is teaching me how to move this to the right of the screen to leave blank space -->
+
+<div>
+</div>
+<!--  This part of the tutorial is teaching me how to hide content depending on the size of your screen-->
+
+  <div class="container">
+
+<div class="well hidden-sm hidden-md hidden-lg">
+  <p> Screen &lt; 768px</p>
+</div>
+
+<div class="well hidden-md hidden-lg">
+  <p> Screen &lt; 768px and 992px</p>
+</div>
+
+<div class="hidden-lg">
+    <p> Screen &lt; 992px and &lt; 1200px </p>
+</div>
+
+<div class="well">
+  <p> Screen &lt; 1200px</p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<!--This part is about creating collapsable colums  -->
+<div class="container">
+
+  <div class="col-lg-2 col-md-2 col-sm4 col-xs-12">
+  <h4><a href="#col1Content" data-toggle="collapse">Colum1</a></h4>
+  <div id="#col1Content" class="collapse in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat sodales arcu, pulvinar eleifend justo egestas sit amet. Aliquam in felis non leo feugiat interdum rhoncus vitae magna. Aliquam gravida non mauris sit amet fringilla. Sed bibendum aliquet quam. Mauris ac tincidunt lectus. Suspendisse tincidunt nisl ut eros facilisis, ac aliquam ex accumsan. Fusce elementum risus tellus. Ut a mauris in libero fringilla pharetra sed non risus. Etiam cursus nunc ut risus vulputate, nec semper turpis consectetur. Nam semper leo tellus, vitae rhoncus tellus sodales ut.
+  </div>
+
+<div class="col-lg-4 col-md-4 col-sm8 col-xs-12">
+  <h4><a href="#col2Content" data-toggle="collapse">Colum2</a></h4>
+  <div id="#col2Content" class="collapse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat sodales arcu, pulvinar eleifend justo egestas sit amet. Aliquam in felis non leo feugiat interdum rhoncus vitae magna. Aliquam gravida non mauris sit amet fringilla. Sed bibendum aliquet quam. Mauris ac tincidunt lectus. Suspendisse tincidunt nisl ut eros facilisis, ac aliquam ex accumsan. Fusce elementum risus tellus. Ut a mauris in libero fringilla pharetra sed non risus. Etiam cursus nunc ut risus vulputate, nec semper turpis consectetur. Nam semper leo tellus, vitae rhoncus tellus sodales ut.
+  </div>
+
+<div class="col-lg-6 col-md-6 col-sm12 col-xs-12">
+    <h4><a href="#col3Content" data-toggle="collapse">Colum3</a></h4>
+    <div id="#col3Content" class="collapse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat sodales arcu, pulvinar eleifend justo egestas sit amet. Aliquam in felis non leo feugiat interdum rhoncus vitae magna. Aliquam gravida non mauris sit amet fringilla. Sed bibendum aliquet quam. Mauris ac tincidunt lectus. Suspendisse tincidunt nisl ut eros facilisis, ac aliquam ex accumsan. Fusce elementum risus tellus. Ut a mauris in libero fringilla pharetra sed non risus. Etiam cursus nunc ut risus vulputate, nec semper turpis consectetur. Nam semper leo tellus, vitae rhoncus tellus sodales ut.
+    </div>
+
+</div>
+
+<!--This part of the tutorial taught me how to create equally sized colums and the importance of rows -->
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <h4> Colum 1 </h4>
+  I will just add a filler paragraph here... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat sodales arcu, pulvinar eleifend justo egestas sit amet. Aliquam in felis non leo feugiat interdum rhoncus vitae magna. Aliquam gravida non mauris sit amet fringilla. Sed bibendum aliquet quam. Mauris ac tincidunt lectus. Suspendisse tincidunt nisl ut eros facilisis, ac aliquam ex accumsan. Fusce elementum risus tellus. Ut a mauris in libero fringilla pharetra sed non risus. Etiam cursus nunc ut risus vulputate, nec semper turpis consectetur. Nam semper leo tellus, vitae rhoncus tellus sodales ut.
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <h4> Colum 2 </h4>
+  I will just add a filler paragraph here..."TO make this a different size so I can use my clear fix to show how to fix the problem"....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat sodales arcu, pulvinar eleifend justo egestas sit amet. Aliquam in felis non leo feugiat interdum rhoncus vitae magna. Aliquam gravida non mauris sit amet fringilla. Sed bibendum aliquet quam. Mauris ac tincidunt lectus. Suspendisse tincidunt nisl ut eros facilisis, ac aliquam ex accumsan. Fusce elementum risus tellus. Ut a mauris in libero fringilla pharetra sed non risus. Etiam cursus nunc ut risus vulputate, nec semper turpis consectetur. Nam semper leo tellus, vitae rhoncus tellus sodales ut.
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <h4> Colum 3 </h4>
+  I will just add a filler paragraph here...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat sodales arcu, pulvinar eleifend justo egestas sit amet. Aliquam in felis non leo feugiat interdum rhoncus vitae magna. Aliquam gravida non mauris sit amet fringilla. Sed bibendum aliquet quam. Mauris ac tincidunt lectus. Suspendisse tincidunt nisl ut eros facilisis, ac aliquam ex accumsan. Fusce elementum risus tellus. Ut a mauris in libero fringilla pharetra sed non risus. Etiam cursus nunc ut risus vulputate, nec semper turpis consectetur. Nam semper leo tellus, vitae rhoncus tellus sodales ut.
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <h4> Colum 4 </h4>
+  I will just add a filler paragraph here...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat sodales arcu, pulvinar eleifend justo egestas sit amet. Aliquam in felis non leo feugiat interdum rhoncus vitae magna. Aliquam gravida non mauris sit amet fringilla. Sed bibendum aliquet quam. Mauris ac tincidunt lectus. Suspendisse tincidunt nisl ut eros facilisis, ac aliquam ex accumsan. Fusce elementum risus tellus. Ut a mauris in libero fringilla pharetra sed non risus. Etiam cursus nunc ut risus vulputate, nec semper turpis consectetur. Nam semper leo tellus, vitae rhoncus tellus sodales ut.
+</div>
+
+</div>
+
+
+<div class="page-header">
+<h1> My First Bootstrap Tutorial Practice </h1>
+</div>
+
+<div class="jumbotron">
+  <p> I need to just fill this up with something for the sake of the tutorial and to write something quickly. <br>
+
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Sed consequat sodales arcu, pulvinar eleifend justo egestas sit amet.
+    Aliquam in felis non leo feugiat interdum rhoncus vitae magna.
+    Aliquam gravida non mauris sit amet fringilla. Sed bibendum aliquet quam.
+    Mauris ac tincidunt lectus. Suspendisse tincidunt nisl ut eros facilisis,
+    ac aliquam ex accumsan. Fusce elementum risus tellus. Ut a mauris in libero fringilla pharetra sed non risus.
+    Etiam cursus nunc ut risus vulputate, nec semper turpis consectetur. Nam semper leo tellus, vitae rhoncus tellus sodales ut.
+
+</p>
+
+  <p>
+    <a href="#" class="btn-default btn-lg" role="button"> More Info </a>
+
+    <button type="submit" class="btn btn-danger" role="button"> Button</button
+
+    <input type="button" value="Info" class="btn btn-info">
+
+    <button type="submit" class = "btn-primary btn-sm">Primary</button>
+    <button type="submit" class = "btn btn-success btn-xs">Sucess</button>
+    <button type="submit" class = "btn btn-warning btn-lg">Warning</button>
+    <button type="submit" class = "btn btn-link bt-lg">Link</button>
+
+    <button type="button" class = "btn btn-lg btn-primary" disabled= "disabled">Primary</button>
+
+    <a href="#" class="btn btn-default btn-lg disabled" role="button"> Link </a>
+
+    <div class="btn-grp btn-grp-lg" role="group">
+
+    <button type="button" class = "btn btn-default">Small</button>
+    <button type="button" class = "btn btn-default">Medium</button>
+    <button type="button" class = "btn btn-default">Large</button>
+
+
+
+  </p>
+
+
+
+</div>
+
+</div>
+
+
+<div>
+</div>
+<div class="container">
+
+<div class="row">
+
+<div class"col-md-6 col-md-offset-6">
+
+  <table class="table table-bordered table-striped table-hover">
+
+<thead>
+    <tr>
+      <td colspan="4">I just need something here!</td>
+</tr>
+  </thead>
+<tbody>
+  <tr>
+    <!-- I can adjust the width of the table colums as well -->
+    <th class="col-md-2"></td>
+
+    <th class="text-center">WHatever</td>
+        <th class="text-center">It doesnt matter</td>
+            <th class="text-center">As long as I learn</td>
+            </tr>
+            <td> <a href="#">THis doesnt matter</a></td>
+            <td>Blah</td>
+            <td>Blah</td>
+            <td>Blah</td>
+            <td>Blah</td>
+
+<div>
+</div>
+
+
+  </div>
+</div>
 
 <div class="container">
 
-<h1><a href="#"> Bootstrap Site </a> </h1>
+<div class="jumbotron">
 
-<div class="navbar">
-	          <div class="navbar-inner">
-	            <div class="container">
-	              <ul class="nav">
-	                <li class="active"><a href="#">Home</a></li>
-	                <li><a href="#">Projects</a></li>
-	                <li><a href="#">Services</a></li>
-	                <li><a href="#">Downloads</a></li>
-	                <li><a href="#">About</a></li>
-	                <li><a href="#">Contact</a></li>
-	              </ul>
-	            </div>
-	          </div>
-	        </div>
 
-          <div class="hero-unit">
-                  <h1>Marketing stuff!</h1>
-
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
-                  <a href="#" class="btn btn-large btn-info">Get Started</a>
-               </div>
-               <div class="row">
-	        	<div class="span4">
-              <ul class="nav nav-list">
-      <li class="nav-header">What we are?</li>
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Our Clients</a></li>
-      <li><a href="#">Our Services</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li class="nav-header">Our Friend</li>
-      <li><a href="#">Google</a></li>
-      <li><a href="#">Yahoo!</a></li>
-      <li><a href="#">Bing</a></li>
-      <li><a href="#">Microsoft</a></li>
-      <li><a href="#">Gadgetic World</a></li>
-  </ul>
-	        	</div>
-	        	<div class="span8">
-	        		<p>Dummy Text</p>
-	        	</div>
-	        </div>
+<p>
+  <span class="glyphicon glyphicon-film"></span>
+</p>
 </div>
+</div>
+
+
+
+
+
+
 
 <script src="jquery-3.1.1.js"></script>
 <script src="js/bootstrap.js"></script>
