@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>My Bootstrap Tutorial Part 2</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+<link href='https://fonts.googleapis.com/css?family=Pacifico'
+	rel='stylesheet' type='text/css'>
+<style type="text/css">
+body {
+	font-size: 62.5%;
+	font-family: arial, sans-serif;
+}
+
+
+
+#websiteTitle {
+	font-size: 5em;
+	vertical-align: middle;
+	font-family: 'Pacifico', cursive;
+	padding-left: 15px;
+	color: #006884;
+
+
+}
+/* Carousel Styling */
+.slide1 {
+	background-image: url('bkgrnd1.png');
+	height: 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color:#B00051;
+}
+
+.slide2 {
+	background-image: url('bkgrnd2.png');
+	height: 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color:#006884;
+}
+
+.slide3 {
+	background-image: url('bkgrnd3.png');
+	height: 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color:#F68370;
+}
+
+.carousel-caption h1 {
+	font-size: 6;
+	font-family: 'Pacifico', cursive;
+	padding-bottom: .4em;
+}
+
+.carousel-caption p {
+	font-size: 4em;
+}
+
+.button {border-radius: 50%;}
+}
+
+</style>
+</head>
+<body>
+
+	
+			<span id="websiteTitle">M.Gharseldin's First Slider </span>
+
+	<!-- Carousel -->
+	<!-- I need to remember to ALWAYS surround everything in my carousel with a DIV with the class carousel slide -->
+
+	<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+		<!-- Define how many slides to put in the carousel -->
+		<ol class="carousel-indicators">
+			<li data-target="#theCarousel" data-slide-to="0" class="active">
+			</li>
+			<li data-target="#theCarousel" data-slide-to="1"></li>
+			<li data-target="#theCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Define the text to place over the image -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="slide1"></div>
+				<div class="carousel-caption">
+					<h1>I love Amr</h1>
+					<p>Always and Forever</p>
+					<p>
+						<a href="#" class="btn btn-primary btn-sm">My Photos</a>
+					</p>
+				<p>
+					<span class="glyphicon glyphicon-heart"></span>
+				</p>
+				
+				</div>
+			</div>
+			<div class="item">
+				<div class="slide2"></div>
+				<div class="carousel-caption">
+					<h1>Amr is such an amazing person</h1>
+					<p>He is the greatest husband and friend.</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="slide3"></div>
+				<div class="carousel-caption">
+					<h1>He always takes good care of me</h1>
+					<p>I hope he knows how much I love him and appreciate him.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Set the actions to take when the arrows are clicked -->
+		<a class="left carousel-control" href="#theCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"> </span>
+		</a> <a class="right carousel-control" href="#theCarousel"
+			data-slide="next"> <span
+			class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<!-- Use downloaded version of Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
